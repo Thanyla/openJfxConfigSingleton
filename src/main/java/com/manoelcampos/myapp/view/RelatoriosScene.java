@@ -4,18 +4,20 @@ import com.manoelcampos.myapp.App;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.TilePane;
+import com.manoelcampos.myapp.model.Config;
 
 /**
  * Cena (tela/view) para exibição de relatórios.
  * @author manoelcampos
  */
 public class RelatoriosScene extends AbstractScene {
+    private final Config config = new Config.getInstance();
 
     public RelatoriosScene(App app) {
         super(app);
         
         //TODO: EXIBIR CONFIGURAÇÃO DENTRO DO LABEL
-        var label = new Label("Formato Relatórios: ");
+        var label = new Label("Formato Relatórios: "+config.getFormatRelatorios());
         var btnVoltar = new Button("Voltar");
         
         //Adiciona os campos na tela, organizando um após o outro (TilePane)

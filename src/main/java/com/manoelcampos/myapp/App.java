@@ -1,4 +1,4 @@
-package com.thanyla.myapp;
+package com.manoelcampos.myapp;
 
 import com.manoelcampos.myapp.view.MainScene;
 import javafx.application.Application;
