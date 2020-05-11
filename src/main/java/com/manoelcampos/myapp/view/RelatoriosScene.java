@@ -11,7 +11,7 @@ import com.manoelcampos.myapp.model.Config;
  * @author manoelcampos
  */
 public class RelatoriosScene extends AbstractScene {
-    private final Config config = new Config.getInstance();
+    private final Config config = Config.getInstance();
 
     public RelatoriosScene(App app) {
         super(app);
